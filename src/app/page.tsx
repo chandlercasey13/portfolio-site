@@ -1,9 +1,10 @@
 
 import BlurFade from "@/components/ui/blur-fade";
 import { FadeText } from "@/components/ui/fade-text";
-
+import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Badge } from "@/components/ui/badge";
 import { data } from "@/data/resume";
 import Markdown from "react-markdown";
 
@@ -14,7 +15,7 @@ const BLUR_FADE_DELAY = 0.04;
 export default function Home() {
   return (
    
-      <main className="">
+      <main className="flex flex-col min-h-[100dvh] space-y-10">
         <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between items-center">
@@ -86,6 +87,47 @@ export default function Home() {
               />
             </BlurFade>
           ))}
+        </div>
+      </section>
+      <section id="projects">
+        <div className="space-y-4 w-full">
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <h2 className="text-xl font-bold">Projects</h2>
+          </BlurFade>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+            {data.projects.map((project, id) => (
+              <BlurFade
+                key={project.title}
+                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+              >
+                <ProjectCard
+                  href={project.href}
+                  key={project.title}
+                  title={project.title}
+                  description={project.description}
+                  dates={project.dates}
+                  tags={project.technologies}
+                  image={project.image}
+                  video={project.video}
+                  links={project.links}
+                />
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <h2 className="text-xl font-bold">Skills</h2>
+          </BlurFade>
+          <div className="flex flex-wrap gap-1">
+            {data.skills.map((skill, id) => (
+              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                <Badge key={skill}>{skill}</Badge>
+              </BlurFade>
+            ))}
+          </div>
         </div>
       </section>
       </main>
