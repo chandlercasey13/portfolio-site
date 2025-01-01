@@ -43,7 +43,7 @@ export default function Home() {
       </section>
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold">About</h2>
+          <h2 className="text-xl font-bold pb-2">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <Markdown className=" max-w-full text-pretty  text-sm ">
@@ -100,6 +100,7 @@ export default function Home() {
                 key={project.title}
                 delay={BLUR_FADE_DELAY * 12 + id * 0.05}
               >
+               
                 <ProjectCard
                   href={project.href}
                   key={project.title}
@@ -111,6 +112,7 @@ export default function Home() {
                   video={project.video}
                   links={project.links}
                 />
+               
               </BlurFade>
             ))}
           </div>

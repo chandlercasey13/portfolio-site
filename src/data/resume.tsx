@@ -15,6 +15,8 @@ export const data = {
     "Typescript",
     "Next.js",
     "Node.js",
+    "React Native",
+    "Amazon Web Services",
     "Python",
     "Postgres",
     "Flask",
@@ -22,10 +24,10 @@ export const data = {
     "TailwindCSS",
     "Zustand",
     "TanStack Query",
-    "React Native",
+    
     "Shadcn UI",
     "Firebase",
-    "Express.js",
+    
   ],
   contact: {
     email: "chandlercasey13@gmail.com",
@@ -52,6 +54,7 @@ export const data = {
 
         navbar: false,
       },
+     
     ],
   },
 
@@ -66,18 +69,18 @@ export const data = {
       start: "May 2024",
       end: "Current",
       description:
-        "Built and maintained responsive user interfaces with Next.js and Tailwind CSS for seamless user experiences, collaborating closely with backend teams to implement features, resolve issues, and ensure a cohesive product. Leveraged AWS for efficient image uploads and storage, implemented real-time socket communication, and optimized load times to enhance frontend performance. Utilized state management tools like Zustand and Context API for efficient application state management, and developed reusable components for a clean, scalable codebase, contributing to the project’s overall maintainability.",
+        "I specialize in delivering high-quality software solutions tailored to client needs. From ideation to deployment, I build scalable, efficient applications that meet business goals and exceed user expectations. With a keen focus on clean code and best practices, I ensure reliable, bug-free applications that drive results and enhance user experiences.",
     },
   ],
   projects: [
     {
-      title: "",
+      title: "Cryptocurrency Metrics App",
       href: "",
       dates: "2024",
       active: true,
       description:
-        "",
-      technologies: [],
+        " A real-time cryptocurrency metrics app for instant updates and dynamic tracking of promising coins on Pump.Fun",
+      technologies: ["TypeScript", "Next.js", "TailwindCSS", "WebSockets"],
       links: [
         {
           type: "Website",
@@ -89,17 +92,17 @@ export const data = {
       video: "",
     },
     {
-      title: "",
-      href: "",
+      title: "Chatter",
+      href: "https://chatter-messaging.netlify.app/",
       dates: "2024",
-      active: false,
+      active: true,
       description:
-        "",
-      technologies: [],
+        "Chatter is a dynamic chat app built with React, Node.js, and Tailwind CSS. It offers real-time messaging and an intuitive interface for seamless conversations.",
+      technologies: ["React", "Redux", "Node.js", "TailwindCSS", "WebSockets",],
       links: [
         {
           type: "Website",
-          href: "",
+          href: "https://chatter-messaging.netlify.app/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
@@ -107,17 +110,17 @@ export const data = {
       video: "",
     },
     {
-      title: "",
+      title: "Hamiter Construction Site",
       href: "",
       dates: "2024",
-      active: false,
+      active: true,
       description:
-        "",
-      technologies: [],
+        "A sleek construction site built for Hamiter Construction using Next.js, TypeScript, and Tailwind CSS featuring dynamic project showcases and  email contact service. ",
+      technologies: ["TypeScript", "Next.js", "TailwindCSS"],
       links: [
         {
           type: "Website",
-          href: "",
+          href: "https://chandlercasey13.github.io/hamiter-construction-site/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
@@ -125,22 +128,23 @@ export const data = {
       video: "",
     },
     {
-      title: "",
+      title: "SureLock",
       href: "",
       dates: "2024",
-      active: false,
+      active: true,
       description:
-        "",
-      technologies: [],
+        "SureLock is a secure password manager built with Django and Python, featuring high-level encryption, easy password generation, and safe sharing for your sensitive data.",
+      technologies: ["Python", "Django"],
       links: [
         {
           type: "Website",
-          href: "",
+          href: "https://surelock-password-app-fcf68c8b901a.herokuapp.com/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "",
       video: "",
     },
+    
   ],
 } as const;
