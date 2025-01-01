@@ -7,17 +7,17 @@ export const data = {
   location: "Bryan, Texas",
   locationLink: "",
   description:
-    "Full Stack Engineer proficient in TypeScript, Next.js, and Node.js, committed to building highly functional, scalable, and data-efficient applications that prioritize exceptional user experience and performance",
+    "Full Stack Developer proficient in TypeScript, Next.js, React Native, and Node.js",
   summary:
-    "A Full Stack engineer, specialize in building dynamic web applications using TypeScript, Next.js, and React. I love using Tailwind CSS to create responsive designs and manage data with PostgreSQL, which keeps everything running smoothly. I&apos;m all about writing clean code and keeping up with the latest trends, aiming to deliver high-quality projects that users actually enjoy—without any pesky bugs, of course!",
+    " Focused on building scalable, efficient, and user-centric applications for both web and mobile platforms. With a strong foundation in both frontend and backend development, I create seamless, high-performance solutions that prioritize functionality and user experience. Experienced in designing responsive interfaces and managing complex data systems, I am committed to writing clean, maintainable code and staying up to date with the latest industry practices. My approach ensures the delivery of reliable and impactful applications that meet diverse development needs.   ",
   avatarUrl: "/me.png",
   skills: [
-    "React",
-    "Next.js",
     "Typescript",
+    "Next.js",
     "Node.js",
     "Python",
     "Postgres",
+    "Flask",
     "MongoDB",
     "TailwindCSS",
     "Zustand",
@@ -32,7 +32,7 @@ export const data = {
     social: [
       {
         name: "GitHub",
-        url: "",
+        url: "https://github.com/chandlercasey13",
         icon: Icons.github,
 
         navbar: true,

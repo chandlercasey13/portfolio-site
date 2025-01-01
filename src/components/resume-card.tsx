@@ -44,7 +44,7 @@ export const ResumeCard = ({
       className="block cursor-pointer  "
       onClick={handleClick}
     >
-      <Card className="flex border">
+      <Card className="flex ">
         <div className="flex-none pl-6 pt-6">
           <Avatar className="border border-white size-12 m-auto bg-muted-background dark:bg-foreground">
             <AvatarImage
@@ -55,7 +55,7 @@ export const ResumeCard = ({
             <AvatarFallback>{altText[0]}</AvatarFallback>
           </Avatar>
         </div>
-        <div className="flex-grow ml-4 items-center flex-col group">
+        <div className="flex-grow  items-center flex-col group">
           <CardHeader>
             <div className="flex items-center justify-between gap-x-2 text-base">
               <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
