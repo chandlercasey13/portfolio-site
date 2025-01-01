@@ -54,6 +54,13 @@ export const data = {
 
         navbar: false,
       },
+      {
+        name: "Upwork",
+        url: "https://www.upwork.com/freelancers/~012f0b21236c113c1c",
+        icon: Icons.upwork,
+
+        navbar: true,
+      },
      
     ],
   },
