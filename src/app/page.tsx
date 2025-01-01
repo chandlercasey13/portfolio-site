@@ -15,7 +15,7 @@ const BLUR_FADE_DELAY = 0.04;
 export default function Home() {
   return (
    
-      <main className="flex flex-col min-h-[100dvh] space-y-10">
+      <main className="flex flex-col min-h-[100dvh] space-y-10  ">
         <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between items-center">
@@ -26,11 +26,13 @@ export default function Home() {
                // yOffset={8}
                 text={`${data.name.split(" ")[0]}`}
               />
+              <div className="pt-2">
               <FadeText
-                className="max-w-[600px] md:text-md"
+                className="max-w-[600px]  md:text-md  "
                 //delay={BLUR_FADE_DELAY}
                 text={data.description}
               />
+              </div>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-32 border">
@@ -53,9 +55,9 @@ export default function Home() {
             {data.contact.social.map((social) => (
               <div
                 key={social.url}
-                className="flex gap-1 justify-center items-center"
+                className="flex gap-1 justify-center items-center hover:shadow-lg hover:bg-white/10  transition-all duration-300 ease-out rounded-lg p-1 "
               >
-                <social.icon className="size-4" />
+                <social.icon className="size-4 " />
                 <a href={social.url} target="_blank" rel="noreferrer">
                   {social.name}
                 </a>
