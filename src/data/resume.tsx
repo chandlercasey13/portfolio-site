@@ -57,14 +57,14 @@ export const data = {
 
   work: [
     {
-      company: "",
+      company: "Upwork",
       href: "#",
       badges: [],
       location: "Remote",
       title: "Full Stack Developer",
-      logoUrl: "",
-      start: "Aug 2024",
-      end: "Nov 2024",
+      logoUrl: "/upworklogo.png",
+      start: "May 2024",
+      end: "Current",
       description:
         "Built and maintained responsive user interfaces with Next.js and Tailwind CSS for seamless user experiences, collaborating closely with backend teams to implement features, resolve issues, and ensure a cohesive product. Leveraged AWS for efficient image uploads and storage, implemented real-time socket communication, and optimized load times to enhance frontend performance. Utilized state management tools like Zustand and Context API for efficient application state management, and developed reusable components for a clean, scalable codebase, contributing to the project’s overall maintainability.",
     },
