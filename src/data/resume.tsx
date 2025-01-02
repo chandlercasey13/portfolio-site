@@ -91,7 +91,7 @@ export const data = {
       links: [
         {
           type: "Website",
-          href: "",
+          href: "https://pumpfun-graduated-430c947ecf6a.herokuapp.com/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
