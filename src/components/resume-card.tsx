@@ -92,7 +92,7 @@ export const ResumeCard = ({
               animate={{
                 opacity: isExpanded ? 1 : 0,
 
-                height: isExpanded ? "6rem" : 0,
+                height: isExpanded ? "auto" : 0,
               }}
               transition={{
                 duration: 0.7,
@@ -100,7 +100,7 @@ export const ResumeCard = ({
               }}
               className={`mt-2  text-xs sm:text-sm `}
             >
-              {description}
+              {isExpanded? <p className="pb-4 pr-4">{description}</p>: ''}
             </motion.div>
           )}
         </div>
