@@ -70,7 +70,7 @@ export function ProjectCard({
           />
         )}
       </Link>
-      <CardHeader className="px-2">
+      <CardHeader className="px-4 py-4">
         <div className="space-y-1">
           <CardTitle className=" text-base">{title}</CardTitle>
           <time className="font-sans text-xs">{dates}</time>
@@ -97,7 +97,7 @@ export function ProjectCard({
           </div>
         )}
       </CardContent>
-      <CardFooter className="px-2 pb-2">
+      <CardFooter className="px-3 pb-4">
         {links && links.length > 0 && (
           <div className="flex flex-row flex-wrap items-start gap-1">
             {links?.map((link, idx) => (
