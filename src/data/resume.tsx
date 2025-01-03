@@ -67,6 +67,18 @@ export const data = {
 
   work: [
     {
+      company: "PROJXON",
+      href: "#",
+      badges: [],
+      location: "Remote",
+      title: "Application Specialist Intern",
+      logoUrl: "/projxon.jpg",
+      start: "Dec 2024",
+      end: "Current",
+      description:
+        "Currently engaged in an internship, where I assist developers with workflow optimization and contribute to tailoring applications to align with client-specific requirements, ensuring efficient and customized solutions.",
+    },
+    {
       company: "Upwork",
       href: "#",
       badges: [],

@@ -44,9 +44,9 @@ export const ResumeCard = ({
       className="block cursor-pointer  "
       onClick={handleClick}
     >
-      <Card className="flex border-none ">
-        <div className="flex-none pl-6 pt-6">
-          <Avatar className="border border-white size-12 m-auto bg-muted-background dark:bg-foreground">
+      <Card className="flex  border-[1px] border-white/10 ">
+        <div className="flex-none pl-4 pt-6">
+          <Avatar className="border border-white  size-10 m-auto bg-muted-background dark:bg-foreground">
             <AvatarImage
               src={logoUrl}
               alt={altText}
@@ -84,7 +84,7 @@ export const ResumeCard = ({
                 {period}
               </div>
             </div>
-            {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
+            {subtitle && <div className="font-sans text-xs ">{subtitle}</div>}
           </CardHeader>
           {description && (
             <motion.div
@@ -92,13 +92,13 @@ export const ResumeCard = ({
               animate={{
                 opacity: isExpanded ? 1 : 0,
 
-                height: isExpanded ? "auto" : 0,
+                height: isExpanded ? "6rem" : 0,
               }}
               transition={{
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-xs sm:text-sm"
+              className={`mt-2  text-xs sm:text-sm `}
             >
               {description}
             </motion.div>
