@@ -93,7 +93,7 @@ export const data = {
   ],
   projects: [
     {
-      title: "Cryptocurrency Metrics App",
+      title: "Cryptocurrency Metrics (In Progress)",
       href: "",
       dates: "2024",
       active: true,
