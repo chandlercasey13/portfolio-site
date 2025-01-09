@@ -117,7 +117,7 @@ export const data = {
       active: true,
       description:
         "Chatter is a dynamic chat app built with React, Node.js, and Tailwind CSS. It offers real-time messaging and an intuitive interface for seamless conversations.",
-      technologies: ["React", "Redux", "Node.js", "TailwindCSS", "WebSockets",],
+      technologies: ["React", "Redux", "Node.js", "AWS S3", "TailwindCSS", "WebSockets",],
       links: [
         {
           type: "Website",
