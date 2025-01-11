@@ -91,6 +91,21 @@ export const data = {
         "I specialize in delivering high-quality software solutions tailored to client needs. From ideation to deployment, I build scalable, efficient applications that meet business goals and exceed user expectations. With a keen focus on clean code and best practices, I ensure reliable, bug-free applications that drive results and enhance user experiences.",
     },
   ],
+  certifications: [
+    {
+      company: "Certified Cloud Practioner",
+      href: "#",
+      badges: [],
+      location: "Remote",
+      title: "Amazon Web Services",
+      logoUrl: "/amazon-logo.svg",
+      start: "Jan 2025",
+      end: "",
+      description:
+        "Demonstrates foundational knowledge of cloud concepts, AWS services, security, billing, and support. Proficient in understanding core AWS services, cloud economics, and architecture best practices to support organizational cloud adoption and strategy.",
+    },
+    
+  ],
   projects: [
     {
       title: "Cryptocurrency Metrics (In Progress)",
@@ -166,4 +181,5 @@ export const data = {
     },
     
   ],
+
 } as const;
