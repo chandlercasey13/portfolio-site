@@ -66,30 +66,31 @@ export const data = {
   },
 
   work: [
+       {
+      company: "Fufild",
+      href: "#",
+      badges: [],
+      location: "Remote",
+      title: "Software Engineering Intern",
+      logoUrl: "/fufild.svg",
+      start: "Jan 2025",
+      end: "Current",
+      description:
+        "I specialize in delivering high-quality software solutions tailored to client needs. From ideation to deployment, I build scalable, efficient applications that meet business goals and exceed user expectations. With a keen focus on clean code and best practices, I ensure reliable, bug-free applications that drive results and enhance user experiences.",
+    },
     {
       company: "PROJXON",
       href: "#",
       badges: [],
       location: "Remote",
-      title: "Application Specialist Intern",
-      logoUrl: "/projxon.jpg",
+      title: "Software Engineering Intern",
+      logoUrl: "/projxonwhite.png",
       start: "Dec 2024",
       end: "Current",
       description:
         "Currently engaged in an internship, where I assist developers with workflow optimization and contribute to tailoring applications to align with client-specific requirements, ensuring efficient and customized solutions.",
     },
-    {
-      company: "Upwork",
-      href: "#",
-      badges: [],
-      location: "Remote",
-      title: "Full Stack Developer",
-      logoUrl: "/upworklogo.png",
-      start: "May 2024",
-      end: "Current",
-      description:
-        "I specialize in delivering high-quality software solutions tailored to client needs. From ideation to deployment, I build scalable, efficient applications that meet business goals and exceed user expectations. With a keen focus on clean code and best practices, I ensure reliable, bug-free applications that drive results and enhance user experiences.",
-    },
+ 
   ],
   certifications: [
     {
