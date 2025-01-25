@@ -108,7 +108,7 @@ export const data = {
       badges: [],
       location: "Remote",
       title: "Amazon Web Services",
-      logoUrl: "/amazon-logo.svg",
+      logoUrl: "/aws.svg",
       start: "Jan 2025",
       end: "",
       description:
@@ -118,13 +118,31 @@ export const data = {
   ],
   projects: [
     {
-      title: "Cryptocurrency Metrics (In Progress)",
+      title: "Condensed",
       href: "",
-      dates: "2024",
+      dates: " 2025",
       active: true,
       description:
-        " A real-time cryptocurrency metrics app for instant updates and dynamic tracking of promising coins on Pump.Fun",
-      technologies: ["TypeScript", "Next.js", "TailwindCSS", "WebSockets"],
+        "An AI-powered Chrome extension that generates concise summaries of webpage content. It enables users to quickly grasp key points of articles, blogs, and documents directly in the browser, enhancing productivity and efficiency.",
+      technologies: ["TypeScript", "React", "Redis","AWS"],
+      links: [
+        {
+          type: "Website",
+          href: "https://chandlercasey13.github.io/hamiter-construction-site/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Pump.Fun GraphQL API",
+      href: "",
+      dates: " 2024",
+      active: true,
+      description:
+        " A GraphQL endpoint designed for PumpFun Coins, providing users with advanced coin analytics. Features include retrieving sniper data, bundling statistics, and other key metrics to help users make informed decisions quickly and efficiently.",
+      technologies: ["GraphQL","TypeScript",  "WebSockets"],
       links: [
         {
           type: "Website",
@@ -153,24 +171,7 @@ export const data = {
       image: "",
       video: "",
     },
-    {
-      title: "Hamiter Construction Site",
-      href: "",
-      dates: "2024",
-      active: true,
-      description:
-        "A sleek construction site built for Hamiter Construction using Next.js, TypeScript, and Tailwind CSS featuring dynamic project showcases and  email contact service. ",
-      technologies: ["TypeScript", "Next.js", "TailwindCSS"],
-      links: [
-        {
-          type: "Website",
-          href: "https://chandlercasey13.github.io/hamiter-construction-site/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
-    },
+  
     {
       title: "SureLock",
       href: "",
