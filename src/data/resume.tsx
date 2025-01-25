@@ -46,13 +46,20 @@ export const data = {
 
         navbar: true,
       },
-     
       {
         name: "Email",
         url: "mailto: chandlercasey13@gmail.com",
         icon: Icons.email,
 
         navbar: false,
+      },
+     
+      {
+        name: "Leetcode",
+        url: "https://leetcode.com/u/Chandlercasey13/",
+        icon: Icons.leetcode,
+
+        navbar: true,
       },
       {
         name: "Upwork",
@@ -61,7 +68,9 @@ export const data = {
 
         navbar: true,
       },
-     
+    
+        
+      
     ],
   },
 
