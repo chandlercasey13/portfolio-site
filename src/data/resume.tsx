@@ -96,7 +96,7 @@ export const data = {
       location: "Remote",
       title: "Software Engineering Intern",
       logoUrl: "/projxonwhite.png",
-      start: "Oct 2024",
+      start: "Sep 2024",
       end: "Dec 2024",
       description:
         "Engaged in an internship where I assist developers with workflow optimization and contribute to tailoring applications using TypeScript, Python, and Next.js to align with client-specific requirements, ensuring efficient and customized solutions.",
