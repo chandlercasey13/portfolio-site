@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
     
-      <main className=" flex flex-col max-w-2xl space-y-10 z-50 mx-auto py-12 sm:py-24 px-6  ">
+      <main className=" flex flex-col lg:max-w-2xl space-y-10 z-50 mx-auto py-12 sm:py-24 px-6 max-w-[100svw] ">
         <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between items-center">
