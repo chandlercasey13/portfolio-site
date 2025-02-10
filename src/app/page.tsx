@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { data } from "@/data/resume";
 import Markdown from "react-markdown";
 import GitHubCalendar from '../components/githubcalendar'
-import { Particles } from "@/components/magicui/particles";
+
 
 
 const BLUR_FADE_DELAY = 0.04;
