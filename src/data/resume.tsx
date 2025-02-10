@@ -19,6 +19,7 @@ export const data = {
     "Node.js",
     "React Native",
     "Amazon Web Services",
+    'GraphQL',
    
     "Flask",
     "MongoDB",

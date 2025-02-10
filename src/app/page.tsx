@@ -8,14 +8,16 @@ import { Badge } from "@/components/ui/badge";
 import { data } from "@/data/resume";
 import Markdown from "react-markdown";
 import GitHubCalendar from '../components/githubcalendar'
+import { Particles } from "@/components/magicui/particles";
 
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Home() {
   return (
-   
-      <main className="flex flex-col min-h-[100dvh] space-y-10  ">
+    <>
+    
+      <main className=" flex flex-col min-h-[100dvh] max-w-2xl space-y-10 z-50  ">
         <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between items-center">
@@ -164,7 +166,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      </main>
+
+    </main>  
+    </>
+    
+      
       
     
   );
