@@ -62,7 +62,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-         <Particles quantity={400} className=" absolute w-screen h-[1900px]  inset-0 z-0"/>
+         <Particles quantity={400} className=" absolute max-w-screen   inset-0 z-0"/>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <TooltipProvider delayDuration={0}>{children}</TooltipProvider>
         </ThemeProvider>
