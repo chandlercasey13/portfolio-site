@@ -58,7 +58,7 @@ export default function RootLayout({
 
       <body
         className={cn(
-          " overflow-x-hidden min-h-full w-screen flex justify-center bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
+          " overflow-x-hidden min-h-screen max-w-screen flex justify-center bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
           fontSans.variable
         )}
       >
