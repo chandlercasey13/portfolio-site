@@ -7,18 +7,19 @@ export const data = {
   location: "Bryan, Texas",
   locationLink: "",
   description:
-    "Full Stack Developer proficient in TypeScript, Next.js, React Native, and Node.js",
+    "Full Stack Developer proficient in TypeScript, Python, and React Native",
   summary:
     " Focused on building scalable, efficient, and user-centric applications for both web and mobile platforms. With a strong foundation in both frontend and backend development, I create seamless, high-performance solutions that prioritize functionality and user experience. Experienced in designing responsive interfaces and managing complex data systems, I am committed to writing clean, maintainable code and staying up to date with the latest industry practices. My approach ensures the delivery of reliable and impactful applications that meet diverse development needs.   ",
   avatarUrl: "/me.png",
   skills: [
     "Typescript",
     "Next.js",
+    "Python",
+    "PostgreSQL",
     "Node.js",
     "React Native",
     "Amazon Web Services",
-    "Python",
-    "Postgres",
+   
     "Flask",
     "MongoDB",
     "TailwindCSS",
@@ -85,7 +86,7 @@ export const data = {
       start: "Jan 2025",
       end: "Current",
       description:
-        "I specialize in delivering high-quality software solutions tailored to client needs. From ideation to deployment, I build scalable, efficient applications that meet business goals and exceed user expectations. With a keen focus on clean code and best practices, I ensure reliable, bug-free applications that drive results and enhance user experiences.",
+        "As a Software Engineering Intern, I contribute to the development of a multi-platform HR application for Web, iOS, and Android, using Typescript, Next.js, and React Native. My role involves building and optimizing application features, enhancing system functionality, and ensuring the platform delivers a seamless and efficient experience for users in a Software-as-a-Service (SaaS) environment.",
     },
     {
       company: "PROJXON",
@@ -94,10 +95,10 @@ export const data = {
       location: "Remote",
       title: "Software Engineering Intern",
       logoUrl: "/projxonwhite.png",
-      start: "Dec 2024",
-      end: "Current",
+      start: "Oct 2024",
+      end: "Dec 2024",
       description:
-        "Currently engaged in an internship, where I assist developers with workflow optimization and contribute to tailoring applications to align with client-specific requirements, ensuring efficient and customized solutions.",
+        "Engaged in an internship where I assist developers with workflow optimization and contribute to tailoring applications using TypeScript, Python, and Next.js to align with client-specific requirements, ensuring efficient and customized solutions.",
     },
  
   ],
@@ -128,7 +129,7 @@ export const data = {
       links: [
         {
           type: "Website",
-          href: "https://chandlercasey13.github.io/hamiter-construction-site/",
+          href: "",
           icon: <Icons.globe className="size-3" />,
         },
       ],

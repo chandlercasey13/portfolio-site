@@ -7,7 +7,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { data } from "@/data/resume";
 import Markdown from "react-markdown";
-
+import GitHubCalendar from '../components/githubcalendar'
 
 
 const BLUR_FADE_DELAY = 0.04;
@@ -66,7 +66,7 @@ export default function Home() {
           </div>
         </BlurFade>
       </section>
-      <section id="work">
+      <section id="work" >
         <div className="flex min-h-0 flex-col gap-y-3 border-none">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Work Experience</h2>
@@ -91,8 +91,8 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section>
-      <div className="flex min-h-0 flex-col gap-y-3 border-none">
+      <section id ="certifications" className="pt-0">
+      <div className="flex min-h-0 flex-col gap-y-3  border-none">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Certifications</h2>
           </BlurFade>
@@ -116,10 +116,15 @@ export default function Home() {
           ))}
         </div>
       </section>
+      
+
       <section id="projects">
         <div className="space-y-4 w-full">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <h2 className="text-xl font-bold">Projects</h2>
+          </BlurFade>
+          <BlurFade  delay={BLUR_FADE_DELAY * 11}>
+          <GitHubCalendar  username="chandlercasey13"  />
           </BlurFade>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
             {data.projects.map((project, id) => (
