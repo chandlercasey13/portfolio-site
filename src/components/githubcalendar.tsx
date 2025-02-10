@@ -109,7 +109,7 @@ const GitHubCalendar = forwardRef<HTMLElement, Props>(
 GitHubCalendar.displayName = 'GitHubCalendar'
 
 const gitHubTheme = {
-  light: ['rgba(0,255,255,1)', 'rgba(0,255,255,1)', 'rgba(0,255,255,1)', '#30a14e', '#216e39'],
+  light: ['#161b22', 'rgba(255,255,255,.4)', 'rgba(255,255,255,.6)', 'rgba(255,255,255,1)', 'rgba(255,255,255,1.2)'],
   dark: ['#161b22', 'rgba(255,255,255,.4)', 'rgba(255,255,255,.6)', 'rgba(255,255,255,1)', 'rgba(255,255,255,1.2)'],
 } satisfies ThemeInput
 
