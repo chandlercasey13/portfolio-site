@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { data } from "@/data/resume";
 import Markdown from "react-markdown";
 import GitHubCalendar from '../components/githubcalendar'
-import Script from "next/script";
+
 
 
 const BLUR_FADE_DELAY = 0.04;
@@ -16,23 +16,7 @@ const BLUR_FADE_DELAY = 0.04;
 export default function Home() {
   return (
     <>
-   
-   <Script
-        strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-FZQ8B8H0TZ6"
-      />
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-FZQ8B8H0TZ6');
-          `,
-        }}
-      />
+  
     
       <main className=" flex flex-col lg:max-w-2xl space-y-10 z-50 mx-auto py-12 sm:py-24 px-6 max-w-[100svw] ">
         <section id="hero">

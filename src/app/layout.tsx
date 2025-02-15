@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 import { Particles } from "@/components/magicui/particles";
 const fontSans = FontSans({
@@ -55,6 +56,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-FZQB8H0TZ6"
+        ></Script>
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-FZQB8H0TZ6');
+         `}
+        </Script>
+      </head>
 
       <body
         className={cn(
@@ -62,7 +77,10 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-         <Particles quantity={100} className=" absolute max-w-screen h-[1900px]  inset-0 z-0"/>
+        <Particles
+          quantity={100}
+          className=" absolute max-w-screen h-[1900px]  inset-0 z-0"
+        />
         <ThemeProvider attribute="class" defaultTheme="dark">
           <TooltipProvider delayDuration={0}>{children}</TooltipProvider>
         </ThemeProvider>
