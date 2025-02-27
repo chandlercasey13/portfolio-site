@@ -7,16 +7,18 @@ export const data = {
   location: "Bryan, Texas",
   locationLink: "",
   description:
-    "Full Stack Developer proficient in TypeScript, Python, and React Native",
+    "Full Stack Developer proficient in TypeScript, Golang, and React/React Native.",
   summary:
     " Focused on building scalable, efficient, and user-centric applications for both web and mobile platforms. With a strong foundation in both frontend and backend development, I create seamless, high-performance solutions that prioritize functionality and user experience. Experienced in designing responsive interfaces and managing complex data systems, I am committed to writing clean, maintainable code and staying up to date with the latest industry practices. My approach ensures the delivery of reliable and impactful applications that meet diverse development needs.   ",
   avatarUrl: "/me.png",
   skills: [
     "Typescript",
     "Next.js",
+    "Golang",
     "Python",
     "PostgreSQL",
     "Node.js",
+    "React",
     "React Native",
     "Amazon Web Services",
     'GraphQL',
@@ -130,7 +132,7 @@ export const data = {
       links: [
         {
           type: "Website",
-          href: "",
+          href: "https://chromewebstore.google.com/detail/condensed/bgkmnbolcblkeblallpkpofpfenciika",
           icon: <Icons.globe className="size-3" />,
         },
       ],
@@ -144,7 +146,7 @@ export const data = {
       active: true,
       description:
         " A GraphQL endpoint designed for PumpFun Coins, providing users with advanced coin analytics. Features include retrieving sniper data, bundling statistics, and other key metrics to help users make informed decisions quickly and efficiently.",
-      technologies: ["GraphQL","TypeScript",  "WebSockets"],
+      technologies: ["Golang","TypeScript","GraphQL",  "WebSockets"],
       links: [
         {
           type: "Website",
