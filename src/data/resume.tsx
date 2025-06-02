@@ -9,7 +9,7 @@ export const data = {
   description:
     "Software Engineer focused on backend systems with proficiency in Golang, TypeScript, and cloud infrastructure.",
   summary:
-    "Focused on building scalable, efficient backend systems with an emphasis on reliability, performance, and clean architecture. During internships at Fufild and Projxon, I implemented a high-performance web scraper in Golang using OCR and goroutines to extract structured data from unstructured sources at scale. I also engineered robust APIs, designed a Node.js mail server for scalable communication, and contributed to backend systems that improved security, data flow, and workflow automation. I'm currently pursuing a B.S. in Computer Science at Western Governors University, concentrating on software development, data structures, and system design.",
+    "Focused on building scalable, efficient backend systems with a strong emphasis on reliability, performance, and clean architecture. Through hands-on internship experience, I’ve contributed to real-world software used in production environments—supporting automation, system optimization, and secure data handling. My work has involved backend infrastructure, API development, and internal tooling to improve operational workflows. I'm currently pursuing a B.S. in Computer Science at Western Governors University, with a focus on software development, data structures, and system design.",
   avatarUrl: "/me.png",
   skills: [
     "Golang",
