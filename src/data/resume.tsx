@@ -7,28 +7,27 @@ export const data = {
   location: "Bryan, Texas",
   locationLink: "",
   description:
-    "Full Stack Developer proficient in TypeScript, Golang, and React/React Native.",
+    "Software Engineer focused on backend systems with proficiency in Golang, TypeScript, and cloud infrastructure.",
   summary:
-    " Focused on building scalable, efficient, and user-centric applications for both web and mobile platforms. With a strong foundation in both frontend and backend development, I create seamless, high-performance solutions that prioritize functionality and user experience. Experienced in designing responsive interfaces and managing complex data systems, I am committed to writing clean, maintainable code and staying up to date with the latest industry practices. My approach ensures the delivery of reliable and impactful applications that meet diverse development needs.   ",
+    "Focused on building scalable, efficient backend systems with an emphasis on reliability, performance, and clean architecture. During internships at Fufild and Projxon, I implemented a high-performance web scraper in Golang using OCR and goroutines to extract structured data from unstructured sources at scale. I also engineered robust APIs, designed a Node.js mail server for scalable communication, and contributed to backend systems that improved security, data flow, and workflow automation. I'm currently pursuing a B.S. in Computer Science at Western Governors University, concentrating on software development, data structures, and system design.",
   avatarUrl: "/me.png",
   skills: [
-    "Typescript",
-    "Next.js",
     "Golang",
-    "Python",
+    "Typescript",
+    "Java",
+    "Amazon Web Services",
     "PostgreSQL",
     "Node.js",
+    "MongoDB",
+    "Next.js",
+    "Python",
     "React",
     "React Native",
-    "Amazon Web Services",
     'GraphQL',
-   
     "Flask",
-    "MongoDB",
     "TailwindCSS",
     "Zustand",
     "TanStack Query",
-    
     "Shadcn UI",
     "Firebase",
     
@@ -52,7 +51,7 @@ export const data = {
       },
       {
         name: "Email",
-        url: "mailto: chandlercasey13@gmail.com",
+  url: "mailto:chandlercasey13@gmail.com?subject=Let's%20Connect&body=Hi%20Chandler%2C%0A%0AI%20wanted%20to%20reach%20out%20about...",
         icon: Icons.email,
 
         navbar: false,
@@ -78,6 +77,19 @@ export const data = {
     ],
   },
 
+ education: [
+       {
+      company: "Western Governors University",
+      href: "#",
+      badges: [],
+      location: "Remote",
+      title: "Bachelor's Degree of Computer Science",
+      logoUrl: "/wgu.svg",
+      start: "Expected: Aug 2026",
+      end: "Current",
+      description:
+        "Currently pursuing a Computer Science degree with a focus on backend development, system architecture, and secure software design. Coursework includes data structures and algorithms, operating systems, computer architecture, backend programming, advanced Java, AI/ML, and information security. The program emphasizes applied problem-solving, software engineering principles, and collaborative project development aligned with industry needs.",
+    },],
   work: [
        {
       company: "Fufild",
@@ -86,10 +98,10 @@ export const data = {
       location: "Remote",
       title: "Software Engineering Intern",
       logoUrl: "/fufild.svg",
-      start: "Jan 2025",
-      end: "Current",
+      start: "Jan",
+      end: "Jun 2025",
       description:
-        "As a Software Engineering Intern, I contribute to the development of a multi-platform HR application for Web, iOS, and Android, using Typescript, Next.js, and React Native. My role involves building and optimizing application features, enhancing system functionality, and ensuring the platform delivers a seamless and efficient experience for users in a Software-as-a-Service (SaaS) environment.",
+        "As a Software Engineering Intern, I worked on backend systems that improved data processing, platform security, and operational efficiency. I developed tools using Golang and concurrent programming to automate data extraction, and contributed to systems that enhanced cross-platform tracking and backend performance. I also worked with TypeScript and Next.js to support internal tooling and ensure seamless integration within a modern SaaS environment.",
     },
     {
       company: "PROJXON",
@@ -98,10 +110,10 @@ export const data = {
       location: "Remote",
       title: "Software Engineering Intern",
       logoUrl: "/projxonwhite.png",
-      start: "Sep 2024",
+      start: "Sep ",
       end: "Dec 2024",
       description:
-        "Engaged in an internship where I assist developers with workflow optimization and contribute to tailoring applications using TypeScript, Python, and Next.js to align with client-specific requirements, ensuring efficient and customized solutions.",
+        "Engaged in an internship, where I helped design and deploy an internal mail server in Node.js to streamline communications and outreach, and worked with TypeScript, and Next.js to support internal tooling and data tracking systems. My contributions enabled more efficient client data access and improved the reliability and scalability of internal processes.",
     },
  
   ],
