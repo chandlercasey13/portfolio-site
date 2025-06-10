@@ -9,8 +9,8 @@ export const data = {
   description:
     "Full Stack Developer proficient in TypeScript, Golang, and React/React Native.",
   summary:
-    " Focused on building scalable, efficient, and user-centric applications for both web and mobile platforms. With a strong foundation in both frontend and backend development, I create seamless, high-performance solutions that prioritize functionality and user experience. Experienced in designing responsive interfaces and managing complex data systems, I am committed to writing clean, maintainable code and staying up to date with the latest industry practices. My approach ensures the delivery of reliable and impactful applications that meet diverse development needs.   ",
-  avatarUrl: "/me.png",
+    "Focused on building scalable, efficient backend systems with a strong emphasis on reliability, performance, and clean architecture. Through hands-on internship experience, I’ve contributed to real-world software used in production environments—supporting automation, system optimization, and secure data handling. My work has involved backend infrastructure, API development, and internal tooling to improve operational workflows. I'm currently pursuing a B.S. in Computer Science at Western Governors University, with a focus on software development, data structures, and system design.",
+  avatarUrl: "/linkedinpic.png",
   skills: [
     "Typescript",
     "Next.js",
@@ -79,6 +79,18 @@ export const data = {
   },
 
   work: [
+    {
+      company: "Dsalta",
+      href: "#",
+      badges: [],
+      location: "Remote",
+      title: "Backend Software Engineering Intern",
+      logoUrl: "/dsalta.svg",
+      start: "Jun",
+      end: "Current",
+      description:
+        "As a Backend Engineering Intern, I’ve been focused on backend development with an emphasis on building and maintaining robust API integrations. I’ve contributed to internal services that connect third-party platforms with our systems, ensuring seamless data flow and operational reliability. My work has supported the development of scalable integration pipelines, internal tooling, and system-wide improvements within a modern SaaS environment.",
+    },
        {
       company: "Fufild",
       href: "#",
@@ -92,7 +104,7 @@ export const data = {
         "As a Software Engineering Intern, I contribute to the development of a multi-platform HR application for Web, iOS, and Android, using Typescript, Next.js, and React Native. My role involves building and optimizing application features, enhancing system functionality, and ensuring the platform delivers a seamless and efficient experience for users in a Software-as-a-Service (SaaS) environment.",
     },
     {
-      company: "PROJXON",
+      company: "Projxon",
       href: "#",
       badges: [],
       location: "Remote",
