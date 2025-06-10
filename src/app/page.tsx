@@ -69,6 +69,32 @@ export default function Home() {
           </div>
         </BlurFade>
       </section>
+        <section id ="certifications" className="pt-0">
+      <div className="flex min-h-0 flex-col gap-y-3  border-none">
+          <BlurFade delay={BLUR_FADE_DELAY * 5}>
+            <h2 className="text-xl font-bold">Education</h2>
+          </BlurFade>
+          {data.education.map((cert, id) => (
+            <BlurFade
+              key={cert.company}
+              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
+            >
+              <ResumeCard
+                key={cert.company}
+                logoUrl={cert.logoUrl}
+                altText={cert.company}
+                title={cert.company}
+                subtitle={cert.title}
+                href={cert.href}
+                badges={cert.badges}
+                period={`${cert.start}`}
+                description={cert.description}
+              />
+            </BlurFade>
+          ))}
+        </div>
+      </section>
+      
       <section id="work" >
         <div className="flex min-h-0 flex-col gap-y-3 border-none">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
