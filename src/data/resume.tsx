@@ -7,14 +7,14 @@ export const data = {
   location: "Bryan, Texas",
   locationLink: "",
   description:
-    "Software Engineer focused on backend systems with proficiency in Golang, TypeScript, and cloud infrastructure.",
+    "Software Engineer focused on backend systems with proficiency in Java, TypeScript, and cloud infrastructure.",
   summary:
     "Focused on building scalable, efficient backend systems with a strong emphasis on reliability, performance, and clean architecture. Through hands-on internship experience, I’ve contributed to real-world software used in production environments—supporting automation, system optimization, and secure data handling. My work has involved backend infrastructure, API development, and internal tooling to improve operational workflows. I'm currently pursuing a B.S. in Computer Science at Western Governors University, with a focus on software development, data structures, and system design.",
   avatarUrl: "/linkedinpic.png",
   skills: [
-    "Golang",
     "Typescript",
     "Java",
+    "Golang",
     "Amazon Web Services",
     "PostgreSQL",
     "Node.js",
@@ -91,19 +91,32 @@ export const data = {
         "Currently pursuing a Computer Science degree with a focus on backend development, system architecture, and secure software design. Coursework includes data structures and algorithms, operating systems, computer architecture, backend programming, advanced Java, AI/ML, and information security. The program emphasizes applied problem-solving, software engineering principles, and collaborative project development aligned with industry needs.",
     },],
   work: [
-    {
-      company: "Dsalta",
-      href: "#",
-      badges: [],
-      location: "Remote",
-      title: "Backend Software Engineering Intern",
-      logoUrl: "/dsalta.svg",
-      start: "Jun",
-      end: "Current",
-      description:
-        "As a Backend Engineering Intern, I’ve been focused on backend development with an emphasis on building and maintaining robust API integrations. I’ve contributed to internal services that connect third-party platforms with our systems, ensuring seamless data flow and operational reliability. My work has supported the development of scalable integration pipelines, internal tooling, and system-wide improvements within a modern SaaS environment.",
-    },
+    // {
+    //   company: "Dsalta",
+    //   href: "#",
+    //   badges: [],
+    //   location: "Remote",
+    //   title: "Backend Software Engineering Intern",
+    //   logoUrl: "/dsalta.svg",
+    //   start: "Jun",
+    //   end: "Current",
+    //   description:
+    //     "As a Backend Engineering Intern, I’ve been focused on backend development with an emphasis on building and maintaining robust API integrations. I’ve contributed to internal services that connect third-party platforms with our systems, ensuring seamless data flow and operational reliability. My work has supported the development of scalable integration pipelines, internal tooling, and system-wide improvements within a modern SaaS environment.",
+    // },
+    // {
+    //   company: "Rsme",
+    //   href: "#",
+    //   badges: [],
+    //   location: "Remote",
+    //   title: "Backend Engineer",
+    //   logoUrl: "/Rsme.png",
+    //   start: "Jan",
+    //   end: "Jun 2025",
+    //   description:
+    //     "As a Software Engineering Intern, I worked on backend systems that improved data processing, platform security, and operational efficiency. I developed tools using Golang and concurrent programming to automate data extraction, and contributed to systems that enhanced cross-platform tracking and backend performance. I also worked with TypeScript and Next.js to support internal tooling and ensure seamless integration within a modern SaaS environment.",
+    // },
        {
+
       company: "Fufild",
       href: "#",
       badges: [],
@@ -125,13 +138,38 @@ export const data = {
       start: "Sep ",
       end: "Dec 2024",
       description:
-        "Engaged in an internship, where I helped design and deploy an internal mail server in Node.js to streamline communications and outreach, and worked with TypeScript, and Next.js to support internal tooling and data tracking systems. My contributions enabled more efficient client data access and improved the reliability and scalability of internal processes.",
+        "As a Software Engineering Intern, I developed a full-stack HR platform using Node.js and microservices, providing secure APIs for payroll, benefits, and employee records. I also delivered a serverless PDF generation system with AWS Lambda and API Gateway, cutting manual processing by 80% through automated workflows and email delivery.",
     },
  
   ],
   certifications: [
+    //  {
+    //   company: "Java SE 17 Developer Professional",
+    //   href: "#",
+    //   badges: [],
+    //   location: "Remote",
+    //   title: "Oracle",
+    //   logoUrl: "/oracle.svg",
+    //   start: "Dec 2025",
+    //   end: "",
+    //   description:
+    //     "Demonstrates foundational knowledge of cloud concepts, AWS services, security, billing, and support. Proficient in understanding core AWS services, cloud economics, and architecture best practices to support organizational cloud adoption and strategy.",
+    // },
+   
     {
-      company: "Certified Cloud Practioner",
+      company: "Certified Solutions Architect - Associate",
+      href: "#",
+      badges: [],
+      location: "Remote",
+      title: "Amazon Web Services",
+      logoUrl: "/aws.svg",
+      start: "Aug 2025",
+      end: "",
+      description:
+        "Validates skills in designing secure, resilient, and cost-optimized architectures on AWS. Demonstrates proficiency with core AWS services and best practices for scalable cloud solutions.",
+    },
+     {
+      company: "Certified Cloud Practitioner",
       href: "#",
       badges: [],
       location: "Remote",
@@ -142,6 +180,7 @@ export const data = {
       description:
         "Demonstrates foundational knowledge of cloud concepts, AWS services, security, billing, and support. Proficient in understanding core AWS services, cloud economics, and architecture best practices to support organizational cloud adoption and strategy.",
     },
+    
     
   ],
   projects: [
