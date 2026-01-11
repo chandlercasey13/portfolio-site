@@ -18,7 +18,6 @@ export function TypingAnimation({
 }: TypingAnimationProps) {
   const [displayedText, setDisplayedText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isComplete, setIsComplete] = useState(false);
 
   useEffect(() => {
     if (currentIndex < text.length) {
@@ -28,8 +27,6 @@ export function TypingAnimation({
       }, speed);
 
       return () => clearTimeout(timeout);
-    } else {
-      setIsComplete(true);
     }
   }, [currentIndex, text, speed]);
 

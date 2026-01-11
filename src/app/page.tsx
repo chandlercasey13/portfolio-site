@@ -3,7 +3,6 @@ import BlurFade from "@/components/ui/blur-fade";
 import { FadeText } from "@/components/ui/fade-text";
 import { TypingAnimation } from "@/components/ui/typing-animation";
 import { ProjectCard } from "@/components/project-card";
-import { ResumeCard } from "@/components/resume-card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { data } from "@/data/resume";
