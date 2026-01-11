@@ -7,7 +7,7 @@ export const data = {
   location: "Bryan, Texas",
   locationLink: "",
   description:
-    "Software Engineer focused on backend systems with proficiency in Java, TypeScript, and cloud infrastructure.",
+    "A software engineer focused on backend systems with proficiency in Java, TypeScript, and cloud infrastructure.",
   summary:
     "Focused on building scalable, efficient backend systems with a strong emphasis on reliability, performance, and clean architecture. Through hands-on internship experience, I’ve contributed to real-world software used in production environments—supporting automation, system optimization, and secure data handling. My work has involved backend infrastructure, API development, and internal tooling to improve operational workflows. I'm currently pursuing a B.S. in Computer Science at Western Governors University, with a focus on software development, data structures, and system design.",
   avatarUrl: "/linkedinpic.png",

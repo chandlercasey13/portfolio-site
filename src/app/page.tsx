@@ -1,6 +1,7 @@
 
 import BlurFade from "@/components/ui/blur-fade";
 import { FadeText } from "@/components/ui/fade-text";
+import { TypingAnimation } from "@/components/ui/typing-animation";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -8,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { data } from "@/data/resume";
 import Markdown from "react-markdown";
 import GitHubCalendar from '../components/githubcalendar'
+import { Timeline } from "@/components/timeline";
 
 
 
@@ -23,11 +25,10 @@ export default function Home() {
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between items-center">
             <div className="flex-col flex flex-1 space-y-1.5">
-              <FadeText
-                //delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none"
-               // yOffset={8}
-                text={`${data.name.split(" ")[0]}`}
+              <TypingAnimation
+                text="hello, I'm Chandler"
+                className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-3xl/none"
+                speed={80}
               />
               <div className="pt-2">
               <FadeText
@@ -69,83 +70,50 @@ export default function Home() {
           </div>
         </BlurFade>
       </section>
-        <section id ="certifications" className="pt-0">
-      <div className="flex min-h-0 flex-col gap-y-3  border-none">
-          <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-bold">Education</h2>
-          </BlurFade>
-          {data.education.map((cert, id) => (
-            <BlurFade
-              key={cert.company}
-              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
-            >
-              <ResumeCard
-                key={cert.company}
-                logoUrl={cert.logoUrl}
-                altText={cert.company}
-                title={cert.company}
-                subtitle={cert.title}
-                href={cert.href}
-                badges={cert.badges}
-                period={`${cert.start}`}
-                description={cert.description}
-              />
-            </BlurFade>
-          ))}
-        </div>
+      <section id="timeline">
+        <BlurFade delay={BLUR_FADE_DELAY * 5}>
+          <h2 className="text-xl font-bold pb-4">Timeline</h2>
+        </BlurFade>
+        <Timeline
+          items={[
+            
+            {
+              organization: "Western Governors University",
+              role: "B.S. Computer Science",
+              description: "working on large scale messaging systems",
+              startDate: "Aug  2024",
+              endDate: "May  2026",
+              dotColor: "bg-blue-500",
+            },
+            {
+              organization: "Amazon Certification",
+              role: "AWS Certified Solutions Architect - Associate",
+              description: "worked on amazon fresh grocery experience",
+              startDate: "Nov 2025",
+              endDate: "Aug 2025",
+              dotColor: "bg-green-500",
+            },
+            {
+              organization: "Fufild",
+              role: "Software Engineering Intern",
+              description: "got my degree to make my parents proud",
+              startDate: "Jan 2025",
+              endDate: "Jun  2025",
+              dotColor: "bg-yellow-500",
+            },
+            
+            {
+              organization: "General Assembly",
+              role: "Software Engineering Apprentice",
+              description: "480 hours of hands-on coding bootcamp",
+              startDate: "May 2024",
+              endDate: "August 2024",
+              dotColor: "bg-red-500",
+            },
+          ]}
+        />
       </section>
-      
-      <section id="work" >
-        <div className="flex min-h-0 flex-col gap-y-3 border-none">
-          <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-bold">Work Experience</h2>
-          </BlurFade>
-          {data.work.map((work, id) => (
-            <BlurFade
-              key={work.company}
-              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
-            >
-              <ResumeCard
-                key={work.company}
-                logoUrl={work.logoUrl}
-                altText={work.company}
-                title={work.company}
-                subtitle={work.title}
-                href={work.href}
-                badges={work.badges}
-                period={`${work.start} - ${work.end ?? "Present"}`}
-                description={work.description}
-              />
-            </BlurFade>
-          ))}
-        </div>
-      </section>
-      <section id ="certifications" className="pt-0">
-      <div className="flex min-h-0 flex-col gap-y-3  border-none">
-          <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-bold">Certifications</h2>
-          </BlurFade>
-          {data.certifications.map((cert, id) => (
-            <BlurFade
-              key={cert.company}
-              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
-            >
-              <ResumeCard
-                key={cert.company}
-                logoUrl={cert.logoUrl}
-                altText={cert.company}
-                title={cert.company}
-                subtitle={cert.title}
-                href={cert.href}
-                badges={cert.badges}
-                period={`${cert.start}`}
-                description={cert.description}
-              />
-            </BlurFade>
-          ))}
-        </div>
-      </section>
-      
+       
 
       <section id="projects">
         <div className="space-y-4 w-full">
