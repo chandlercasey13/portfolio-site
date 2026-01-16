@@ -46,9 +46,6 @@ export function Timeline({ items, className }: TimelineProps) {
                 <div className="space-y-1">
                   <h3 className="text-base font-semibold leading-tight">{item.organization}</h3>
                   <p className="text-sm text-muted-foreground leading-tight">{item.role}</p>
-                  <p className="text-sm text-muted-foreground leading-tight mt-1">
-                    {item.description}
-                  </p>
                 </div>
               </div>
               
