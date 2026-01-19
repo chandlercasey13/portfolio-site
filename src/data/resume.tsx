@@ -14,8 +14,11 @@ export const data = {
   skills: [
     "Typescript",
     "Java",
-    "Golang",
+    "Spring Boot",
+    "Spring Security",
     "Amazon Web Services",
+    "Golang",
+    
     "PostgreSQL",
     "Node.js",
     "MongoDB",
@@ -185,6 +188,24 @@ export const data = {
   ],
   projects: [
     {
+      title: "EasyBank",
+      href: "",
+      dates: "2026",
+      active: true,
+      description:
+        "A comprehensive banking application featuring card management and loan services. Built with Spring Boot and Spring Security to ensure secure authentication and authorization for financial transactions.",
+      technologies: ["Java", "Spring Boot", "Spring Security", "ECS Fargate", "AWS RDS" ],
+      links: [
+        {
+          type: "Website",
+          href: "https://chromewebstore.google.com/detail/condensed/bgkmnbolcblkeblallpkpofpfenciika",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
       title: "Condensed",
       href: "",
       dates: " 2025",
@@ -239,24 +260,7 @@ export const data = {
       video: "",
     },
   
-    {
-      title: "SureLock",
-      href: "",
-      dates: "2024",
-      active: true,
-      description:
-        "SureLock is a secure password manager built with Django and Python, featuring high-level encryption, easy password generation, and safe sharing for your sensitive data.",
-      technologies: ["Python", "Django"],
-      links: [
-        {
-          type: "Website",
-          href: "https://surelock-password-app-fcf68c8b901a.herokuapp.com/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
-    },
+   
     
   ],
 
