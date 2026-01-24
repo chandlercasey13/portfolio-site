@@ -7,9 +7,9 @@ export const data = {
   location: "Bryan, Texas",
   locationLink: "",
   description:
-    "A software engineer focused on backend systems with proficiency in Java, TypeScript, and cloud infrastructure.",
+    "A fullstack software engineer with proficiency in Java, React, and AWS cloud computing.",
   summary:
-    "Focused on building scalable, efficient backend systems with a strong emphasis on reliability, performance, and clean architecture. Through hands-on internship experience, I’ve contributed to real-world software used in production environments—supporting automation, system optimization, and secure data handling. My work has involved backend infrastructure, API development, and internal tooling to improve operational workflows. I'm currently pursuing a B.S. in Computer Science at Western Governors University, with a focus on software development, data structures, and system design.",
+    "Focused on building scalable, efficient fullstack applications with a strong emphasis on reliability, performance, and clean architecture. Through hands-on internship experience, I've contributed to real-world software used in production environments—supporting automation, system optimization, and secure data handling. My work spans both frontend and backend development, including API development, user interface design, and internal tooling to improve operational workflows. I'm currently pursuing a B.S. in Computer Science at Western Governors University, with a focus on software development, data structures, and system design.",
   avatarUrl: "/linkedinpic.png",
   skills: [
     "Typescript",
@@ -189,7 +189,7 @@ export const data = {
   projects: [
     {
       title: "EasyBank",
-      href: "",
+      href: "https://easybankfinance.com",
       dates: "2026",
       active: true,
       description:
@@ -198,7 +198,7 @@ export const data = {
       links: [
         {
           type: "Website",
-          href: "https://chromewebstore.google.com/detail/condensed/bgkmnbolcblkeblallpkpofpfenciika",
+          href: "https://easybankfinance.com",
           icon: <Icons.globe className="size-3" />,
         },
       ],

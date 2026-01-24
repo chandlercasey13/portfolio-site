@@ -75,22 +75,21 @@ export default function Home() {
         </BlurFade>
         <Timeline
           items={[
-            
             {
               organization: "Western Governors University",
               role: "B.S. Computer Science",
               description: "working on large scale messaging systems",
               startDate: "Aug  2024",
-              endDate: "May  2026",
+              endDate: "Present",
               dotColor: "bg-blue-500",
             },
             {
-              organization: "Amazon Certification",
-              role: "AWS Certified Solutions Architect - Associate",
-              description: "worked on amazon fresh grocery experience",
-              startDate: "Nov 2025",
-              endDate: "Aug 2025",
-              dotColor: "bg-green-500",
+              organization: "SWE Contracting",
+              role: "Frontend Software Engineer",
+              description: "",
+              startDate: "Oct 2025",
+              endDate: "Present",
+              dotColor: "bg-blue-500",
             },
             {
               organization: "Fufild",
