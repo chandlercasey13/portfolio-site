@@ -108,7 +108,7 @@ export const Particles: React.FC<ParticlesProps> = ({
         canvasSize.current.w,
         canvasSize.current.h,
       );
-    }
+      }
   }, []);
 
   const circleParams = useCallback((): Circle => {

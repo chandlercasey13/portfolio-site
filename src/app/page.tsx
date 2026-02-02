@@ -76,11 +76,11 @@ export default function Home() {
         <Timeline
           items={[
             {
-              organization: "Western Governors University",
-              role: "B.S. Computer Science",
-              description: "working on large scale messaging systems",
-              startDate: "Aug  2024",
-              endDate: "Present",
+              organization: "Georgia Institute of Technology",
+              role: "Accepted for August 2026",
+              description: "",
+              startDate: "Aug 2026",
+              endDate: "May 2028",
               dotColor: "bg-blue-500",
             },
             {
@@ -99,6 +99,14 @@ export default function Home() {
               endDate: "Jun  2025",
               dotColor: "bg-yellow-500",
             },
+            {
+              organization: "Western Governors University",
+              role: "B.S. Computer Science",
+              description: "working on large scale messaging systems",
+              startDate: "Aug  2024",
+              endDate: "Present",
+              dotColor: "bg-blue-500",
+            },
             
             {
               organization: "General Assembly",
@@ -107,6 +115,14 @@ export default function Home() {
               startDate: "May 2024",
               endDate: "August 2024",
               dotColor: "bg-red-500",
+            },
+            {
+              organization: "University of North Texas",
+              role: "General Coursework",
+              description: "",
+              startDate: "2018",
+              endDate: "2020",
+              dotColor: "bg-blue-500",
             },
           ]}
         />

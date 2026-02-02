@@ -10,7 +10,7 @@ export const data = {
     "A fullstack software engineer with proficiency in Java, React, and AWS cloud computing.",
   summary:
     "Focused on building scalable, efficient fullstack applications with a strong emphasis on reliability, performance, and clean architecture. Through hands-on internship experience, I've contributed to real-world software used in production environments—supporting automation, system optimization, and secure data handling. My work spans both frontend and backend development, including API development, user interface design, and internal tooling to improve operational workflows. I'm currently pursuing a B.S. in Computer Science at Western Governors University, with a focus on software development, data structures, and system design.",
-  avatarUrl: "/linkedinpic.png",
+  avatarUrl: "/me.jpeg",
   skills: [
     "Typescript",
     "Java",

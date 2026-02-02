@@ -52,7 +52,7 @@ export function Timeline({ items, className }: TimelineProps) {
               {/* Right side date display for visual balance */}
               <div className="absolute right-0 top-0.5 text-right">
                 <div className="text-xs text-muted-foreground/60 font-mono tabular-nums pr-1">
-                  {item.startDate} - {item.endDate}
+                  {item.startDate}{item.endDate ? ` - ${item.endDate}` : ""}
                 </div>
               </div>
             </div>
