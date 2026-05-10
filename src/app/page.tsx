@@ -1,186 +1,278 @@
+"use client";
 
-import BlurFade from "@/components/ui/blur-fade";
-import { FadeText } from "@/components/ui/fade-text";
-import { TypingAnimation } from "@/components/ui/typing-animation";
-import { ProjectCard } from "@/components/project-card";
+import Link from "next/link";
+import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
 import { data } from "@/data/resume";
-import Markdown from "react-markdown";
-import GitHubCalendar from '../components/githubcalendar'
-import { Timeline } from "@/components/timeline";
+import { Icons } from "@/components/icons";
+import BlurFade from "@/components/ui/blur-fade";
+import { StatCounter } from "@/components/stat-counter";
+import { Marquee } from "@/components/marquee";
+import { GlowCard } from "@/components/glow-card";
+import GitHubCalendar from "@/components/githubcalendar";
 
+const D = 0.08;
 
-
-const BLUR_FADE_DELAY = 0.04;
+function ArrowIcon() {
+  return (
+    <svg
+      className="size-4"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={1.5}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+      />
+    </svg>
+  );
+}
 
 export default function Home() {
   return (
-    <>
-  
-    
-      <main className=" flex flex-col lg:max-w-2xl space-y-10 z-50 mx-auto py-12 sm:py-24 px-6 max-w-[100svw] ">
-        <section id="hero">
-        <div className="mx-auto w-full max-w-2xl space-y-8">
-          <div className="gap-2 flex justify-between items-center">
-            <div className="flex-col flex flex-1 space-y-1.5">
-              <TypingAnimation
-                text="hello, I'm Chandler"
-                className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-3xl/none"
-                speed={80}
-              />
-              <div className="pt-2">
-              <FadeText
-                className="max-w-[600px]  md:text-md  "
-                //delay={BLUR_FADE_DELAY}
-                text={data.description}
-              />
-              </div>
-            </div>
-            <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-32 border">
-                <AvatarImage alt={data.name} src={data.avatarUrl} />
-                <AvatarFallback>{data.initials}</AvatarFallback>
-              </Avatar>
-            </BlurFade>
-          </div>
-        </div>
-      </section>
-      <section id="about">
-        <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold pb-2">About</h2>
-        </BlurFade>
-        <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className=" max-w-full text-pretty  text-sm ">
-            {data.summary}
-          </Markdown>
-          <div className="flex flex-wrap gap-4 mt-4 ">
-            {data.contact.social.map((social) => (
-              <div
-                key={social.url}
-                className="flex gap-1 justify-center items-center hover:shadow-lg hover:bg-white/10  transition-all duration-300 ease-out rounded-lg p-1 "
-              >
-                <social.icon className="size-4 " />
-                <a href={social.url} target="_blank" rel="noreferrer">
-                  {social.name}
-                </a>
-              </div>
-            ))}
-          </div>
-        </BlurFade>
-      </section>
-      <section id="timeline">
-        <BlurFade delay={BLUR_FADE_DELAY * 5}>
-          <h2 className="text-xl font-bold pb-4">Timeline</h2>
-        </BlurFade>
-        <Timeline
-          items={[
-            {
-              organization: "Georgia Institute of Technology",
-              role: "Accepted for August 2026",
-              description: "",
-              startDate: "Aug 2026",
-              endDate: "May 2028",
-              dotColor: "bg-blue-500",
-            },
-            {
-              organization: "SWE Contracting",
-              role: "Frontend Software Engineer",
-              description: "",
-              startDate: "Oct 2025",
-              endDate: "Present",
-              dotColor: "bg-blue-500",
-            },
-            {
-              organization: "Fufild",
-              role: "Software Engineering Intern",
-              description: "got my degree to make my parents proud",
-              startDate: "Jan 2025",
-              endDate: "Jun  2025",
-              dotColor: "bg-yellow-500",
-            },
-            {
-              organization: "Western Governors University",
-              role: "B.S. Computer Science",
-              description: "working on large scale messaging systems",
-              startDate: "Aug  2024",
-              endDate: "Present",
-              dotColor: "bg-blue-500",
-            },
-            
-            {
-              organization: "General Assembly",
-              role: "Software Engineering Apprentice",
-              description: "480 hours of hands-on coding bootcamp",
-              startDate: "May 2024",
-              endDate: "August 2024",
-              dotColor: "bg-red-500",
-            },
-            {
-              organization: "University of North Texas",
-              role: "General Coursework",
-              description: "",
-              startDate: "2018",
-              endDate: "2020",
-              dotColor: "bg-blue-500",
-            },
-          ]}
-        />
-      </section>
-       
-
-      <section id="projects">
-        <div className="space-y-4 w-full">
-          <BlurFade delay={BLUR_FADE_DELAY * 11}>
-            <h2 className="text-xl font-bold">Projects</h2>
-          </BlurFade>
-          <BlurFade  delay={BLUR_FADE_DELAY * 11}>
-          <GitHubCalendar  username="chandlercasey13"  />
-          </BlurFade>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {data.projects.map((project, id) => (
-              <BlurFade
-                key={project.title}
-                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
-              >
-               
-                <ProjectCard
-                  href={project.href}
-                  key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  dates={project.dates}
-                  tags={project.technologies}
-                  image={project.image}
-                  video={project.video}
-                  links={project.links}
+    <div className="max-w-6xl mx-auto px-4 md:px-6 py-6 space-y-4">
+      {/* ── Row 1: Hero | Marquee + Blog + Projects ── */}
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+        {/* Hero Card */}
+        <BlurFade delay={D} className="md:col-span-6 md:row-span-2">
+          <GlowCard className="p-6 md:p-8 h-full flex items-center gap-6">
+            <div className="shrink-0">
+              <Avatar className="w-28 h-28 md:w-36 md:h-36 rounded-2xl border-0 bg-gradient-to-br from-pink-400/20 to-purple-500/20">
+                <AvatarImage
+                  alt={data.name}
+                  src={data.avatarUrl}
+                  className="object-cover rounded-2xl"
                 />
-               
-              </BlurFade>
-            ))}
-          </div>
-        </div>
-      </section>
-      <section id="skills">
-        <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Skills</h2>
-          </BlurFade>
-          <div className="flex flex-wrap gap-1">
-            {data.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
-              </BlurFade>
-            ))}
-          </div>
-        </div>
-      </section>
+                <AvatarFallback className="rounded-2xl text-3xl font-display font-bold bg-gradient-to-br from-pink-400/20 to-purple-500/20">
+                  {data.initials}
+                </AvatarFallback>
+              </Avatar>
+            </div>
+            <div className="space-y-2 min-w-0">
+              <span className="text-[10px] font-medium text-muted-foreground tracking-[0.2em] uppercase whitespace-nowrap">
+                Full Stack Engineer @ SW Enterprises
+              </span>
+              <h1 className="text-3xl md:text-4xl font-display font-bold leading-tight">
+                Chandler
+                <br />
+                Casey
+              </h1>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                {data.description}
+              </p>
+            </div>
+            <Link href="/about" className="card-arrow">
+              <ArrowIcon />
+            </Link>
+          </GlowCard>
+        </BlurFade>
 
-    </main>  
-    </>
-    
-      
-      
-    
+        {/* Marquee */}
+        <BlurFade delay={D * 2} className="md:col-span-6">
+          <GlowCard className="p-0 overflow-hidden">
+            <Marquee
+              items={[
+                "FEATURED",
+                "EasyBank",
+                "Condensed",
+                "LATEST WORK AND",
+                "FEATURED",
+                "Pump.Fun GraphQL",
+                "Chatter",
+              ]}
+            />
+          </GlowCard>
+        </BlurFade>
+
+        {/* Blog Card */}
+        <BlurFade delay={D * 3} className="md:col-span-3">
+          <Link href="/blog" className="block h-full">
+            <GlowCard className="p-6 h-full flex flex-col justify-end">
+              <div className="flex-1 flex flex-col items-center justify-center px-4 gap-3">
+                <span className="text-muted-foreground/30 text-2xl">&#10022;</span>
+                <h3 className="text-lg font-display font-bold text-muted-foreground/60">
+                  Coming Soon
+                </h3>
+              </div>
+              <div className="mt-4">
+                <span className="text-[10px] font-medium text-muted-foreground tracking-[0.2em] uppercase">
+                  Articles & Thoughts
+                </span>
+                <h2 className="text-lg font-display font-bold mt-0.5">
+                  Blog
+                </h2>
+              </div>
+              <div className="card-arrow">
+                <ArrowIcon />
+              </div>
+            </GlowCard>
+          </Link>
+        </BlurFade>
+
+        {/* Projects Card */}
+        <BlurFade delay={D * 4} className="md:col-span-3">
+          <Link href="/projects" className="block h-full">
+            <GlowCard className="p-0 h-full flex flex-col overflow-hidden">
+              <div className="flex-1 bg-gradient-to-br from-blue-600/30 to-indigo-700/40 flex items-center justify-center p-6">
+                <span className="font-display text-2xl font-bold text-white/90">
+                  {data.projects[0]?.title}
+                </span>
+              </div>
+              <div className="p-6">
+                <span className="text-[10px] font-medium text-muted-foreground tracking-[0.2em] uppercase">
+                  Showcase
+                </span>
+                <h2 className="text-lg font-display font-bold mt-0.5">
+                  Projects
+                </h2>
+              </div>
+              <div className="card-arrow">
+                <ArrowIcon />
+              </div>
+            </GlowCard>
+          </Link>
+        </BlurFade>
+      </div>
+
+      {/* ── Row 2: GitHub Calendar | Skills | Social ── */}
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+        {/* GitHub Calendar */}
+        <BlurFade delay={D * 5} className="md:col-span-5">
+          <Link
+            href="https://github.com/chandlercasey13"
+            target="_blank"
+            rel="noreferrer"
+            className="block h-full"
+          >
+            <GlowCard className="pt-8 px-8 pb-5 h-full group flex flex-col">
+              <div className="flex-1 overflow-hidden flex items-center justify-end">
+                <GitHubCalendar username="chandlercasey13" />
+              </div>
+              <div className="mt-1 flex items-center justify-between">
+                <div>
+                  <span className="text-[10px] font-medium text-muted-foreground tracking-[0.2em] uppercase">
+                    GitHub
+                  </span>
+                  <h2 className="text-lg font-display font-bold mt-0.5">
+                    Contributions
+                  </h2>
+                </div>
+              </div>
+              <div className="card-arrow">
+                <ArrowIcon />
+              </div>
+            </GlowCard>
+          </Link>
+        </BlurFade>
+
+        {/* Skills Card */}
+        <BlurFade delay={D * 6} className="md:col-span-4">
+          <Link href="/about" className="block h-full">
+            <GlowCard className="p-6 h-full flex flex-col">
+              <div className="flex-1 flex items-center justify-center py-4">
+                <div className="grid grid-cols-4 gap-3">
+                  {data.skills.slice(0, 8).map((skill) => (
+                    <div
+                      key={skill}
+                      className="w-11 h-11 rounded-xl bg-secondary flex items-center justify-center"
+                    >
+                      <span className="text-[8px] font-semibold text-muted-foreground text-center leading-tight px-0.5">
+                        {skill.length > 6 ? skill.slice(0, 5) + "." : skill}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <span className="text-[10px] font-medium text-muted-foreground tracking-[0.2em] uppercase">
+                  Specialization
+                </span>
+                <h2 className="text-lg font-display font-bold mt-0.5">
+                  Skills
+                </h2>
+              </div>
+              <div className="card-arrow">
+                <ArrowIcon />
+              </div>
+            </GlowCard>
+          </Link>
+        </BlurFade>
+
+        {/* Social Card */}
+        <BlurFade delay={D * 7} className="md:col-span-3">
+          <GlowCard className="p-6 h-full flex flex-col">
+            <div className="flex-1 flex items-center justify-center gap-4 py-4">
+              {data.contact.social
+                .filter((s) => s.navbar)
+                .map((social) => (
+                  <Link
+                    key={social.name}
+                    href={social.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-14 h-14 rounded-full bg-secondary flex items-center justify-center hover:bg-muted-foreground/15 transition-colors"
+                  >
+                    <social.icon className="size-6 text-foreground" />
+                  </Link>
+                ))}
+            </div>
+            <div>
+              <span className="text-[10px] font-medium text-muted-foreground tracking-[0.2em] uppercase">
+                Stay With Me
+              </span>
+              <h2 className="text-lg font-display font-bold mt-0.5">
+                Social Media
+              </h2>
+            </div>
+          </GlowCard>
+        </BlurFade>
+      </div>
+
+      {/* ── Row 3: Stats | Let's Work Together ── */}
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+        <BlurFade delay={D * 8} className="md:col-span-2">
+          <GlowCard className="px-6 py-1.5 h-full flex items-center justify-center">
+            <StatCounter value={2} suffix="+" label="YEARS" sublabel="EXPERIENCE" />
+          </GlowCard>
+        </BlurFade>
+        <BlurFade delay={D * 9} className="md:col-span-2">
+          <GlowCard className="px-6 py-1.5 h-full flex items-center justify-center">
+            <StatCounter value={4} prefix="+" suffix="" label="PROJECTS" sublabel="COMPLETED" />
+          </GlowCard>
+        </BlurFade>
+        <BlurFade delay={D * 10} className="md:col-span-2">
+          <GlowCard className="px-6 py-1.5 h-full flex items-center justify-center">
+            <StatCounter value={3} prefix="" suffix="x" label="AWS" sublabel="CERTIFIED" />
+          </GlowCard>
+        </BlurFade>
+
+        <BlurFade delay={D * 11} className="md:col-span-6">
+          <Link href="/contact" className="block h-full">
+            <GlowCard className="px-8 md:px-10 py-3 md:py-4 pb-6 md:pb-8 h-full flex flex-col justify-center overflow-visible">
+              <div className="space-y-1">
+                <span className="text-muted-foreground/40 text-xl">&#10022;</span>
+                <h2 className="text-3xl md:text-4xl font-display font-bold overflow-visible" style={{ lineHeight: 1.3 }}>
+                  Let&apos;s work
+                  <br />
+                  <span className="text-muted-foreground italic inline-block pb-3" style={{ lineHeight: 1.2 }}>together</span>
+                </h2>
+              </div>
+              <div className="card-arrow">
+                <ArrowIcon />
+              </div>
+            </GlowCard>
+          </Link>
+        </BlurFade>
+      </div>
+
+      <footer className="pt-8 pb-6 text-center">
+        <p className="text-xs text-muted-foreground/50">
+          &copy; {new Date().getFullYear()} Chandler Casey. All rights reserved.
+        </p>
+      </footer>
+    </div>
   );
 }

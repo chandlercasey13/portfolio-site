@@ -3,18 +3,27 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { data } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
+import { Inter as FontSans, Syne, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import { Navbar } from "@/components/navbar";
 
-import { Particles } from "@/components/magicui/particles";
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 });
 
+const fontSyne = Syne({
+  subsets: ["latin"],
+  variable: "--font-syne",
+});
+
+const fontSignature = Dancing_Script({
+  subsets: ["latin"],
+  variable: "--font-signature",
+});
+
 export const metadata: Metadata = {
-  // metadataBase: new URL(data.url),
   title: {
     default: data.name,
     template: `%s | ${data.name}`,
@@ -73,16 +82,17 @@ export default function RootLayout({
 
       <body
         className={cn(
-          " overflow-x-hidden min-h-screen max-w-screen flex justify-center bg-background font-sans antialiased max-w-[100svw] ",
-          fontSans.variable
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable,
+          fontSyne.variable,
+          fontSignature.variable
         )}
       >
-        <Particles
-          quantity={100}
-          className=" absolute max-w-screen h-[1900px]  inset-0 z-0"
-        />
         <ThemeProvider attribute="class" defaultTheme="dark">
-          <TooltipProvider delayDuration={0}>{children}</TooltipProvider>
+          <TooltipProvider delayDuration={0}>
+            <Navbar />
+            <main className="pt-16">{children}</main>
+          </TooltipProvider>
         </ThemeProvider>
       </body>
     </html>

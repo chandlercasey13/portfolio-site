@@ -4,36 +4,35 @@ export const data = {
   name: "Chandler Casey",
   initials: "CC",
   url: "",
-  location: "Bryan, Texas",
+  location: "College Station-Bryan Area, Texas",
   locationLink: "",
   description:
-    "A fullstack software engineer with proficiency in Java, React, and AWS cloud computing.",
+    "Full-stack software engineer focused on React, TypeScript, Node.js, AWS, and backend automation systems.",
   summary:
-    "Focused on building scalable, efficient fullstack applications with a strong emphasis on reliability, performance, and clean architecture. Through hands-on internship experience, I've contributed to real-world software used in production environments—supporting automation, system optimization, and secure data handling. My work spans both frontend and backend development, including API development, user interface design, and internal tooling to improve operational workflows. I'm currently pursuing a B.S. in Computer Science at Western Governors University, with a focus on software development, data structures, and system design.",
-  avatarUrl: "/me.jpeg",
+    "I build production web applications, internal tools, data workflows, and cloud services that reduce manual work and improve operational efficiency. My experience includes AI-assisted development tooling, client-facing web applications, deployment automation, lead enrichment pipelines, fraud visibility features, and admin portals for managing users, permissions, and client data. My current focus is full-stack AI tooling, product engineering, and software systems that combine practical user interfaces with reliable backend workflows.",
+  avatarUrl: "/avatar.png",
   skills: [
-    "Typescript",
-    "Java",
-    "Spring Boot",
-    "Spring Security",
-    "Amazon Web Services",
-    "Golang",
-    
-    "PostgreSQL",
     "Node.js",
-    "MongoDB",
+    "Typescript",
+    "React",
     "Next.js",
     "Python",
-    "React",
+    "Amazon Web Services",
+    "Cloud Computing",
+    "Golang",
+    "PostgreSQL",
+    "MongoDB",
     "React Native",
-    'GraphQL',
+    "GraphQL",
+    "Linux",
     "Flask",
     "TailwindCSS",
     "Zustand",
     "TanStack Query",
     "Shadcn UI",
     "Firebase",
-    
+    "Java",
+    "Spring Boot",
   ],
   contact: {
     email: "chandlercasey13@gmail.com",
@@ -42,84 +41,62 @@ export const data = {
         name: "GitHub",
         url: "https://github.com/chandlercasey13",
         icon: Icons.github,
-
         navbar: true,
       },
       {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/chandler-casey1",
         icon: Icons.linkedin,
-
         navbar: true,
       },
       {
         name: "Email",
-  url: "mailto:chandlercasey13@gmail.com?subject=Let's%20Connect&body=Hi%20Chandler%2C%0A%0AI%20wanted%20to%20reach%20out%20about...",
+        url: "mailto:chandlercasey13@gmail.com?subject=Let's%20Connect&body=Hi%20Chandler%2C%0A%0AI%20wanted%20to%20reach%20out%20about...",
         icon: Icons.email,
-
         navbar: false,
       },
-     
       {
         name: "Leetcode",
         url: "https://leetcode.com/u/Chandlercasey13/",
         icon: Icons.leetcode,
-
-        navbar: true,
+        navbar: false,
       },
       {
-        name: "Upwork",
-        url: "https://www.upwork.com/freelancers/~012f0b21236c113c1c",
-        icon: Icons.upwork,
-
+        name: "Instagram",
+        url: "https://www.instagram.com/chandercasey/",
+        icon: Icons.instagram,
         navbar: true,
       },
-    
-        
-      
     ],
   },
 
- education: [
-       {
+  education: [
+    {
+      company: "Georgia Institute of Technology",
+      href: "#",
+      badges: [],
+      location: "Remote",
+      title: "Master of Science, Computer Science",
+      logoUrl: "",
+      start: "2026",
+      end: "May 2028",
+      description: "Specialization in Computing Systems.",
+    },
+    {
       company: "Western Governors University",
       href: "#",
       badges: [],
       location: "Remote",
-      title: "Bachelor's Degree of Computer Science",
+      title: "Bachelor of Science, Computer Science",
       logoUrl: "/wgu.svg",
-      start: "Expected: Aug 2026",
-      end: "Current",
+      start: "Aug 2024",
+      end: "May 2026",
       description:
-        "Currently pursuing a Computer Science degree with a focus on backend development, system architecture, and secure software design. Coursework includes data structures and algorithms, operating systems, computer architecture, backend programming, advanced Java, AI/ML, and information security. The program emphasizes applied problem-solving, software engineering principles, and collaborative project development aligned with industry needs.",
-    },],
+        "Coursework includes data structures and algorithms, operating systems, computer architecture, backend programming, advanced Java, AI/ML, and information security.",
+    },
+  ],
   work: [
-    // {
-    //   company: "Dsalta",
-    //   href: "#",
-    //   badges: [],
-    //   location: "Remote",
-    //   title: "Backend Software Engineering Intern",
-    //   logoUrl: "/dsalta.svg",
-    //   start: "Jun",
-    //   end: "Current",
-    //   description:
-    //     "As a Backend Engineering Intern, I’ve been focused on backend development with an emphasis on building and maintaining robust API integrations. I’ve contributed to internal services that connect third-party platforms with our systems, ensuring seamless data flow and operational reliability. My work has supported the development of scalable integration pipelines, internal tooling, and system-wide improvements within a modern SaaS environment.",
-    // },
-    // {
-    //   company: "Rsme",
-    //   href: "#",
-    //   badges: [],
-    //   location: "Remote",
-    //   title: "Backend Engineer",
-    //   logoUrl: "/Rsme.png",
-    //   start: "Jan",
-    //   end: "Jun 2025",
-    //   description:
-    //     "As a Software Engineering Intern, I worked on backend systems that improved data processing, platform security, and operational efficiency. I developed tools using Golang and concurrent programming to automate data extraction, and contributed to systems that enhanced cross-platform tracking and backend performance. I also worked with TypeScript and Next.js to support internal tooling and ensure seamless integration within a modern SaaS environment.",
-    // },
-       {
-
+    {
       company: "Fufild",
       href: "#",
       badges: [],
@@ -131,48 +108,58 @@ export const data = {
       description:
         "As a Software Engineering Intern, I worked on backend systems that improved data processing, platform security, and operational efficiency. I developed tools using Golang and concurrent programming to automate data extraction, and contributed to systems that enhanced cross-platform tracking and backend performance. I also worked with TypeScript and Next.js to support internal tooling and ensure seamless integration within a modern SaaS environment.",
     },
-    {
-      company: "Projxon",
-      href: "#",
-      badges: [],
-      location: "Remote",
-      title: "Software Engineering Intern",
-      logoUrl: "/projxonwhite.png",
-      start: "Sep ",
-      end: "Dec 2024",
-      description:
-        "As a Software Engineering Intern, I developed a full-stack HR platform using Node.js and microservices, providing secure APIs for payroll, benefits, and employee records. I also delivered a serverless PDF generation system with AWS Lambda and API Gateway, cutting manual processing by 80% through automated workflows and email delivery.",
-    },
- 
   ],
   certifications: [
-    //  {
-    //   company: "Java SE 17 Developer Professional",
-    //   href: "#",
-    //   badges: [],
-    //   location: "Remote",
-    //   title: "Oracle",
-    //   logoUrl: "/oracle.svg",
-    //   start: "Dec 2025",
-    //   end: "",
-    //   description:
-    //     "Demonstrates foundational knowledge of cloud concepts, AWS services, security, billing, and support. Proficient in understanding core AWS services, cloud economics, and architecture best practices to support organizational cloud adoption and strategy.",
-    // },
-   
     {
-      company: "Certified Solutions Architect - Associate",
+      company: "AWS Certified Developer - Associate",
       href: "#",
       badges: [],
       location: "Remote",
       title: "Amazon Web Services",
       logoUrl: "/aws.svg",
-      start: "Aug 2025",
+      start: "2025",
       end: "",
       description:
-        "Validates skills in designing secure, resilient, and cost-optimized architectures on AWS. Demonstrates proficiency with core AWS services and best practices for scalable cloud solutions.",
+        "Validates proficiency in developing, deploying, and debugging cloud-based applications on AWS.",
     },
-     {
-      company: "Certified Cloud Practitioner",
+    {
+      company: "AWS Certified Solutions Architect - Associate",
+      href: "#",
+      badges: [],
+      location: "Remote",
+      title: "Amazon Web Services",
+      logoUrl: "/aws.svg",
+      start: "Oct 2025",
+      end: "",
+      description:
+        "Validates skills in designing secure, resilient, and cost-optimized architectures on AWS.",
+    },
+    {
+      company: "Linux Essentials",
+      href: "#",
+      badges: [],
+      location: "Remote",
+      title: "Linux Professional Institute (LPI)",
+      logoUrl: "",
+      start: "Jul 2025",
+      end: "",
+      description:
+        "Demonstrates foundational knowledge of Linux, cloud computing, and open-source tools.",
+    },
+    {
+      company: "Java Backend Developer (Spring Boot)",
+      href: "#",
+      badges: [],
+      location: "Remote",
+      title: "Hyperskill",
+      logoUrl: "",
+      start: "Sep 2025",
+      end: "",
+      description:
+        "Validates proficiency in Java and Spring Boot for backend development.",
+    },
+    {
+      company: "AWS Certified Cloud Practitioner",
       href: "#",
       badges: [],
       location: "Remote",
@@ -181,10 +168,8 @@ export const data = {
       start: "Jan 2025",
       end: "",
       description:
-        "Demonstrates foundational knowledge of cloud concepts, AWS services, security, billing, and support. Proficient in understanding core AWS services, cloud economics, and architecture best practices to support organizational cloud adoption and strategy.",
+        "Demonstrates foundational knowledge of cloud concepts, AWS services, security, billing, and support.",
     },
-    
-    
   ],
   projects: [
     {
@@ -194,7 +179,7 @@ export const data = {
       active: true,
       description:
         "A comprehensive banking application featuring card management and loan services. Built with Spring Boot and Spring Security to ensure secure authentication and authorization for financial transactions.",
-      technologies: ["Java", "Spring Boot", "Spring Security", "ECS Fargate", "AWS RDS" ],
+      technologies: ["Java", "Spring Boot", "Spring Security", "ECS Fargate", "AWS RDS"],
       links: [
         {
           type: "Website",
@@ -208,11 +193,11 @@ export const data = {
     {
       title: "Condensed",
       href: "",
-      dates: " 2025",
+      dates: "2025",
       active: true,
       description:
         "An AI-powered Chrome extension that generates concise summaries of webpage content. It enables users to quickly grasp key points of articles, blogs, and documents directly in the browser, enhancing productivity and efficiency.",
-      technologies: ["TypeScript", "React", "Redis","AWS"],
+      technologies: ["TypeScript", "React", "Redis", "AWS"],
       links: [
         {
           type: "Website",
@@ -226,11 +211,11 @@ export const data = {
     {
       title: "Pump.Fun GraphQL API",
       href: "",
-      dates: " 2024",
+      dates: "2024",
       active: true,
       description:
-        " A GraphQL endpoint designed for PumpFun Coins, providing users with advanced coin analytics. Features include retrieving sniper data, bundling statistics, and other key metrics to help users make informed decisions quickly and efficiently.",
-      technologies: ["Golang","TypeScript","GraphQL",  "WebSockets"],
+        "A GraphQL endpoint designed for PumpFun Coins, providing users with advanced coin analytics. Features include retrieving sniper data, bundling statistics, and other key metrics to help users make informed decisions quickly and efficiently.",
+      technologies: ["Golang", "TypeScript", "GraphQL", "WebSockets"],
       links: [
         {
           type: "Website",
@@ -248,7 +233,7 @@ export const data = {
       active: true,
       description:
         "Chatter is a dynamic chat app built with React, Node.js, and Tailwind CSS. It offers real-time messaging and an intuitive interface for seamless conversations.",
-      technologies: ["React", "Redux", "Node.js", "AWS S3", "TailwindCSS", "WebSockets",],
+      technologies: ["React", "Redux", "Node.js", "AWS S3", "TailwindCSS", "WebSockets"],
       links: [
         {
           type: "Website",
@@ -259,9 +244,5 @@ export const data = {
       image: "",
       video: "",
     },
-  
-   
-    
   ],
-
 } as const;
