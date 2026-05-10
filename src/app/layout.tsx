@@ -66,20 +66,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-FZQB8H0TZ6"
-        ></Script>
-        <Script id="google-analytics">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-FZQB8H0TZ6');
-         `}
-        </Script>
-      </head>
+      <head />
 
       <body
         className={cn(
@@ -95,6 +82,18 @@ export default function RootLayout({
             <main className="pt-16">{children}</main>
           </TooltipProvider>
         </ThemeProvider>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-FZQB8H0TZ6"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-FZQB8H0TZ6');
+          `}
+        </Script>
       </body>
     </html>
   );
