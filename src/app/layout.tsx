@@ -83,7 +83,7 @@ export default function RootLayout({
           </TooltipProvider>
         </ThemeProvider>
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-FZQB8H0TZ6"
+          src="https://www.googletagmanager.com/gtag/js?id=G-8WZ1QXL8RH"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -91,7 +91,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-FZQB8H0TZ6');
+            gtag('config', 'G-8WZ1QXL8RH');
           `}
         </Script>
       </body>
