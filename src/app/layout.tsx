@@ -3,7 +3,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { data } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter as FontSans, Syne, Dancing_Script } from "next/font/google";
+import { Inter as FontSans, Plus_Jakarta_Sans, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import { Navbar } from "@/components/navbar";
@@ -13,9 +13,10 @@ const fontSans = FontSans({
   variable: "--font-sans",
 });
 
-const fontSyne = Syne({
+const fontSyne = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-syne",
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 const fontSignature = Dancing_Script({

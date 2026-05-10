@@ -11,6 +11,8 @@ export default {
   	extend: {
   		fontFamily: {
   			sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
+  			display: ['var(--font-syne)', 'system-ui', 'sans-serif'],
+  			signature: ['var(--font-signature)', 'cursive'],
   		},
   		colors: {
   			background: 'hsl(var(--background))',

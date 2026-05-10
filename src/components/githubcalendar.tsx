@@ -98,6 +98,7 @@ const GitHubCalendar = forwardRef<HTMLElement, Props>(
         totalCount={transformFn && transformTotalCount ? undefined : totalCount}
         {...props}
         theme={theme}
+        colorScheme="dark"
         loading={Boolean(props.loading) || loading}
         maxLevel={4}
       />
@@ -109,8 +110,8 @@ const GitHubCalendar = forwardRef<HTMLElement, Props>(
 GitHubCalendar.displayName = 'GitHubCalendar'
 
 const gitHubTheme = {
-  light: ['#161b22', 'rgba(255,255,255,.4)', 'rgba(255,255,255,.6)', 'rgba(255,255,255,1)', 'rgba(255,255,255,1.2)'],
-  dark: ['#161b22', 'rgba(255,255,255,.4)', 'rgba(255,255,255,.6)', 'rgba(255,255,255,1)', 'rgba(255,255,255,1.2)'],
+  light: ['hsl(0,0%,13%)', 'rgba(255,255,255,.25)', 'rgba(255,255,255,.5)', 'rgba(255,255,255,.75)', 'rgba(255,255,255,1)'],
+  dark: ['hsl(0,0%,13%)', 'rgba(255,255,255,.25)', 'rgba(255,255,255,.5)', 'rgba(255,255,255,.75)', 'rgba(255,255,255,1)'],
 } satisfies ThemeInput
 
 export default GitHubCalendar

@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 interface GlowCardProps {
   children: React.ReactNode;
   className?: string;
+  seed?: number;
 }
 
 export function GlowCard({ children, className }: GlowCardProps) {

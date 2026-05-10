@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { data } from "@/data/resume";
 import { Icons } from "@/components/icons";
@@ -12,6 +11,17 @@ import { GlowCard } from "@/components/glow-card";
 import GitHubCalendar from "@/components/githubcalendar";
 
 const D = 0.08;
+
+const SKILL_ICONS = [
+  { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" },
+  { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" },
+  { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-plain.svg" },
+  { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" },
+  { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" },
+  { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg" },
+  { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg" },
+];
 
 function ArrowIcon() {
   return (
@@ -38,7 +48,7 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
         {/* Hero Card */}
         <BlurFade delay={D} className="md:col-span-6 md:row-span-2">
-          <GlowCard className="p-6 md:p-8 h-full flex items-center gap-6">
+          <GlowCard seed={1} className="p-6 md:p-8 h-full flex items-center gap-6">
             <div className="shrink-0">
               <Avatar className="w-28 h-28 md:w-36 md:h-36 rounded-2xl border-0 bg-gradient-to-br from-pink-400/20 to-purple-500/20">
                 <AvatarImage
@@ -52,7 +62,7 @@ export default function Home() {
               </Avatar>
             </div>
             <div className="space-y-2 min-w-0">
-              <span className="text-[10px] font-medium text-muted-foreground tracking-[0.2em] uppercase whitespace-nowrap">
+              <span className="text-[10px] font-medium text-muted-foreground tracking-[0.2em] uppercase">
                 Full Stack Engineer @ SW Enterprises
               </span>
               <h1 className="text-3xl md:text-4xl font-display font-bold leading-tight">
@@ -72,7 +82,7 @@ export default function Home() {
 
         {/* Marquee */}
         <BlurFade delay={D * 2} className="md:col-span-6">
-          <GlowCard className="p-0 overflow-hidden">
+          <GlowCard seed={2} className="p-0 overflow-hidden">
             <Marquee
               items={[
                 "FEATURED",
@@ -90,7 +100,7 @@ export default function Home() {
         {/* Blog Card */}
         <BlurFade delay={D * 3} className="md:col-span-3">
           <Link href="/blog" className="block h-full">
-            <GlowCard className="p-6 h-full flex flex-col justify-end">
+            <GlowCard seed={3} className="p-6 h-full flex flex-col justify-end">
               <div className="flex-1 flex flex-col items-center justify-center px-4 gap-3">
                 <span className="text-muted-foreground/30 text-2xl">&#10022;</span>
                 <h3 className="text-lg font-display font-bold text-muted-foreground/60">
@@ -115,13 +125,13 @@ export default function Home() {
         {/* Projects Card */}
         <BlurFade delay={D * 4} className="md:col-span-3">
           <Link href="/projects" className="block h-full">
-            <GlowCard className="p-0 h-full flex flex-col overflow-hidden">
+            <GlowCard seed={4} className="p-0 h-full flex flex-col overflow-hidden">
               <div className="flex-1 bg-gradient-to-br from-blue-600/30 to-indigo-700/40 flex items-center justify-center p-6">
                 <span className="font-display text-2xl font-bold text-white/90">
                   {data.projects[0]?.title}
                 </span>
               </div>
-              <div className="p-6">
+              <div className="px-6 pb-6 pt-3">
                 <span className="text-[10px] font-medium text-muted-foreground tracking-[0.2em] uppercase">
                   Showcase
                 </span>
@@ -147,7 +157,7 @@ export default function Home() {
             rel="noreferrer"
             className="block h-full"
           >
-            <GlowCard className="pt-8 px-8 pb-5 h-full group flex flex-col">
+            <GlowCard seed={5} className="pt-8 px-8 pb-5 h-full group flex flex-col">
               <div className="flex-1 overflow-hidden flex items-center justify-end">
                 <GitHubCalendar username="chandlercasey13" />
               </div>
@@ -171,17 +181,20 @@ export default function Home() {
         {/* Skills Card */}
         <BlurFade delay={D * 6} className="md:col-span-4">
           <Link href="/about" className="block h-full">
-            <GlowCard className="p-6 h-full flex flex-col">
+            <GlowCard seed={6} className="p-6 h-full flex flex-col">
               <div className="flex-1 flex items-center justify-center py-4">
                 <div className="grid grid-cols-4 gap-3">
-                  {data.skills.slice(0, 8).map((skill) => (
+                  {SKILL_ICONS.map((s) => (
                     <div
-                      key={skill}
+                      key={s.name}
                       className="w-11 h-11 rounded-xl bg-secondary flex items-center justify-center"
+                      title={s.name}
                     >
-                      <span className="text-[8px] font-semibold text-muted-foreground text-center leading-tight px-0.5">
-                        {skill.length > 6 ? skill.slice(0, 5) + "." : skill}
-                      </span>
+                      <img
+                        src={s.icon}
+                        alt={s.name}
+                        className="w-6 h-6 brightness-0 invert opacity-90"
+                      />
                     </div>
                   ))}
                 </div>
@@ -203,7 +216,7 @@ export default function Home() {
 
         {/* Social Card */}
         <BlurFade delay={D * 7} className="md:col-span-3">
-          <GlowCard className="p-6 h-full flex flex-col">
+          <GlowCard seed={7} className="p-6 h-full flex flex-col">
             <div className="flex-1 flex items-center justify-center gap-4 py-4">
               {data.contact.social
                 .filter((s) => s.navbar)
@@ -234,24 +247,24 @@ export default function Home() {
       {/* ── Row 3: Stats | Let's Work Together ── */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
         <BlurFade delay={D * 8} className="md:col-span-2">
-          <GlowCard className="px-6 py-1.5 h-full flex items-center justify-center">
+          <GlowCard seed={8} className="px-6 py-1.5 h-full flex items-center justify-center">
             <StatCounter value={2} suffix="+" label="YEARS" sublabel="EXPERIENCE" />
           </GlowCard>
         </BlurFade>
         <BlurFade delay={D * 9} className="md:col-span-2">
-          <GlowCard className="px-6 py-1.5 h-full flex items-center justify-center">
+          <GlowCard seed={9} className="px-6 py-1.5 h-full flex items-center justify-center">
             <StatCounter value={4} prefix="+" suffix="" label="PROJECTS" sublabel="COMPLETED" />
           </GlowCard>
         </BlurFade>
         <BlurFade delay={D * 10} className="md:col-span-2">
-          <GlowCard className="px-6 py-1.5 h-full flex items-center justify-center">
+          <GlowCard seed={10} className="px-6 py-1.5 h-full flex items-center justify-center">
             <StatCounter value={3} prefix="" suffix="x" label="AWS" sublabel="CERTIFIED" />
           </GlowCard>
         </BlurFade>
 
         <BlurFade delay={D * 11} className="md:col-span-6">
           <Link href="/contact" className="block h-full">
-            <GlowCard className="px-8 md:px-10 py-3 md:py-4 pb-6 md:pb-8 h-full flex flex-col justify-center overflow-visible">
+            <GlowCard seed={11} className="px-8 md:px-10 py-3 md:py-4 pb-6 md:pb-8 h-full flex flex-col justify-center overflow-visible">
               <div className="space-y-1">
                 <span className="text-muted-foreground/40 text-xl">&#10022;</span>
                 <h2 className="text-3xl md:text-4xl font-display font-bold overflow-visible" style={{ lineHeight: 1.3 }}>
